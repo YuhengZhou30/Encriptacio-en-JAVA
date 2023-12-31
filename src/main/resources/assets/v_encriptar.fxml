@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #EEEEEE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.EncriptarC">
+   <children>
+      <Text layoutX="136.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Encriptar" textAlignment="CENTER" wrappingWidth="692.13671875" AnchorPane.leftAnchor="136.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <Button fx:id="Encriptar" layoutX="310.0" layoutY="383.0" mnemonicParsing="false" onAction="#encriptar" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: white;" text="Encriptar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Line endX="737.9000244140625" layoutX="91.0" layoutY="73.0" startX="-100.0" />
+      <Button fx:id="Tornar" layoutX="50.0" layoutY="14.0" mnemonicParsing="false" onAction="#tornar" prefHeight="44.0" prefWidth="84.0" text="&lt;---" AnchorPane.bottomAnchor="542.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="695.5" AnchorPane.topAnchor="14.0" />
+      <AnchorPane layoutX="147.0" layoutY="117.0" prefHeight="63.0" prefWidth="535.0">
+         <children>
+            <Text layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clau pública (ruta absoluta):" wrappingWidth="257.240234375">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="CPU_Path" layoutX="250.0" layoutY="14.0" prefHeight="23.0" prefWidth="269.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="147.0" layoutY="180.0" prefHeight="63.0" prefWidth="535.0">
+         <children>
+            <Text layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arxiu (ruta absoluta):" wrappingWidth="257.240234375">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="ArchivoPath" layoutX="250.0" layoutY="14.0" prefHeight="23.0" prefWidth="269.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="147.0" layoutY="243.0" prefHeight="63.0" prefWidth="535.0">
+         <children>
+            <Text layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destí (ruta absoluta):" wrappingWidth="257.240234375">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="DestinoPath" layoutX="250.0" layoutY="14.0" prefHeight="23.0" prefWidth="269.0" />
+         </children>
+      </AnchorPane>
+      <Text fx:id="textMostrar" layoutX="297.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Encriptació amb éxit " textAlignment="CENTER" wrappingWidth="226.240234375">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
